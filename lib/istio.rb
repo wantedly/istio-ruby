@@ -1,5 +1,2 @@
 require "istio/version"
-
-module Istio
-  # Your code goes here...
-end
+require "istio/tracing"
