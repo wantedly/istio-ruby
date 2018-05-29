@@ -1,4 +1,4 @@
-require "tracing/context"
-require "tracing/header"
-require "tracing/http"
-require "tracing/rack"
+require "istio/tracing/context"
+require "istio/tracing/header"
+require "istio/tracing/http"
+require "istio/tracing/rack"
