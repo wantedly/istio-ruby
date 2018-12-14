@@ -1,8 +1,8 @@
-# Istio
+# Ygrene Istio Tracing Gem
 
-Ruby gem for Istio service mesh (https://istio.io/).
+Rails instrumentation gem for Istio service mesh (https://istio.io/).
 
-This gem lets your rails app propagate http headers for distributed tracing with Istio.
+This gem lets your Rails services propagate b3 http headers for distributed tracing with Istio.
 It propigates headers to Net::Http and Typhoeus(uses libcurl)
 
 ## Installation
