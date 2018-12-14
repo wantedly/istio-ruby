@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Ruby gem for Istio service mesh (https://istio.io/)}
   spec.description   = %q{This gem lets your rails app propagate http headers for distributed tracing with Istio.}
-  spec.homepage      = "https://github.com/ygrene/istio-ruby"
+  spec.homepage      = "https://github.com/ygrene/ygrene-istio-tracing"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
