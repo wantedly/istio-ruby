@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "istio/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "istio"
+  spec.name          = "ygrene-istio-tracing"
   spec.version       = Istio::VERSION
-  spec.authors       = ["Atsushi Tanaka", "Yoshinori Kawasaki"]
-  spec.email         = ["atsushi@wantedly.com", "yoshi@wantedly.com"]
+  spec.authors       = ["Austin Adams"]
+  spec.email         = ["me@austbot.com"]
 
   spec.summary       = %q{Ruby gem for Istio service mesh (https://istio.io/)}
   spec.description   = %q{This gem lets your rails app propagate http headers for distributed tracing with Istio.}
-  spec.homepage      = "https://github.com/wantedly/istio-ruby"
+  spec.homepage      = "https://github.com/ygrene/istio-ruby"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
