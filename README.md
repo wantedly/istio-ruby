@@ -10,7 +10,7 @@ It propigates headers to Net::Http and Typhoeus(uses libcurl)
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'ygrene-istio-tracing'
+gem 'ygrene_istio_tracing'
 ```
 ## Usage
 
