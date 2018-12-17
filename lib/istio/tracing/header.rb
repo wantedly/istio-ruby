@@ -1,15 +1,22 @@
+# frozen_string_literal: true
+
 module Istio
   module Tracing
-
-    PROPAGETION_HEADERS = %w[
-      X-Request-Id
-      X-B3-Traceid
-      X-B3-Spanid
-      X-B3-Parentspanid
-      X-B3-Sampled
-      X-B3-Flags
-      X-Ot-Span-Context
-    ]
-
+    PROPAGATION_HEADERS = %w[
+      x-request-id
+      x-b3-traceid
+      x-b3-spanid
+      x-b3-parentspanid
+      x-b3-sampled
+      x-b3-flags
+      x-ot-span-context
+      X-REQUEST-ID
+      X-B3-TRACEID
+      X-B3-SPANID
+      X-B3-PARENTSPANID
+      X-B3-SAMPLED
+      X-B3-FLAGS
+      X-OT-SPAN-CONTEXT
+    ].freeze
   end
 end

@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 module Istio
   module Tracing
-
     class RackMiddleware
 
       def initialize(app)
@@ -15,10 +16,8 @@ module Istio
       end
 
       def extract_http_headers(env)
-        env.select{|k, v| k.start_with? 'HTTP_'}.map{|k, v| [k.gsub(/^HTTP_/, '').split('_').map(&:capitalize).join('-'), v]}.to_h
+        env.select { |k, _v| PROPAGATION_HEADERS.include?(k.downcase) }
       end
-
     end
-
   end
 end

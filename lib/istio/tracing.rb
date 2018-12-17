@@ -1,7 +1,9 @@
-require "istio/tracing/context"
-require "istio/tracing/header"
-require "istio/tracing/http"
-require "istio/tracing/rack"
+# frozen_string_literal: true
+
+require 'istio/tracing/context'
+require 'istio/tracing/header'
+require 'istio/tracing/http'
+require 'istio/tracing/rack'
 
 begin
   require 'rails/railtie'

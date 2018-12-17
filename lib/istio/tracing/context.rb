@@ -1,6 +1,7 @@
+# frozen_string_literal: true
+
 module Istio
   module Tracing
-
     class NotSetError < ::StandardError
       def initialize
         super('Context is not set for this thread')
@@ -11,7 +12,6 @@ module Istio
       VAR_NAME = :_istio_tracing_context_
 
       class << self
-
         def current
           Thread.current.thread_variable_get(VAR_NAME) || raise(NotSetError)
         end
@@ -34,7 +34,6 @@ module Istio
         def remove_current
           Thread.current.thread_variable_set(VAR_NAME, nil)
         end
-
       end
 
       attr_reader :headers
@@ -42,8 +41,6 @@ module Istio
       def initialize(headers)
         @headers = headers
       end
-
     end
-
   end
 end
