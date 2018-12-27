@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ygrene_istio_tracing (1.0.8)
+    ygrene_istio_tracing (1.0.9)
       typhoeus (~> 1.3.1)
 
 GEM

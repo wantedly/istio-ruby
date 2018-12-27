@@ -17,7 +17,7 @@ module YgreneIstioTracing
       end
 
       def request(req, *args, &block)
-        return super unless Context.exists_current?
+        return super unless ::YgreneIstioTracing::Tracing::Context.exists_current?
 
         headers = ::YgreneIstioTracing::Tracing::Context.current.headers
         ::YgreneIstioTracing::Tracing::PROPAGATION_HEADERS.each do |h|
